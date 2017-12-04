@@ -84,6 +84,34 @@ for item in inputset:
 print('Results based on size', str(np.mean(np.array(overallResults[0]).astype(np.float))))
 print('Results based on symmetry', str(np.mean(np.array(overallResults[1]).astype(np.float))))
 
+#Printed result:
+# inpA = ['SE area', 'mean perimeter', 'mean radius']  # size based: in this case bigger is not better
+#
+#             precision    recall  f1-score   support
+#
+#          M       0.91      0.98      0.94        43
+#          B       0.90      0.69      0.78        13
+#
+#avg / total       0.91      0.91      0.91        56
+#
+# inpB = ['mean smoothness', 'SE area', 'Worst symmetry']  # symmetry based: less symmetrical, higher possibility of being malign
+#
+#             precision    recall  f1-score   support
+#
+#          M       0.91      1.00      0.96        43
+#          B       1.00      0.69      0.82        13
+#
+#avg / total       0.93      0.93      0.92        56
+#
+#
+# Some conclusion to the result.
+# First we want to reserve us that we base the classification_report on the last K-fold. 
+# We get roughly the same result in all folds.
+# For inpB we can see that the precision for is perfect. Our model can predict B with 100% precision.  
+#
+#
+
+
 
 # Part 2: Population and t-test
 
