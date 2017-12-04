@@ -86,7 +86,8 @@ print('Results based on symmetry', str(np.mean(np.array(overallResults[1]).astyp
 # First we want to reserve us that we base the classification_report on the last K-fold. 
 # We get roughly the same result in all folds.
 # For inpB we can see that the precision for is perfect. Our model can predict B with 100% precision.  
-#
+# For both of our models and both our classes we see that precision, recall and f1-score is close to 1, which is the highest score.
+# This tells us that the model makes prediction with high precision
 #
 
 
